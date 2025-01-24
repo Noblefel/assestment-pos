@@ -1,0 +1,81 @@
+.empty {
+  background-color: rgba(250, 250, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 275px;
+}
+
+.empty i {
+  font-size: 4rem;
+  opacity: 0.2;
+}
+
+.table-wrap {
+  height: 275px;
+  overflow: auto;
+}
+
+table {
+  overflow: auto;
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    padding: 0.25rem 0.75rem;
+    text-align: left;
+  }
+
+  td {
+    padding: 0.75rem;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
+  }
+
+  .nama {
+    flex-grow: 1;
+    font-size: 0.9rem;
+  }
+
+  .quantity {
+    font-weight: 600;
+  }
+}
+
+@media print {
+  :root {
+    font-size: 35px;
+  }
+
+  body {
+    visibility: hidden;
+    background-color: white;
+  }
+
+  .total {
+    width: 100%;
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .subtotal {
+    bottom: 2.5rem;
+  }
+
+  table {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    td {
+      width: 400px;
+      font-size: 1rem;
+    }
+  }
+}

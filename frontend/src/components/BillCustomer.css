@@ -1,0 +1,28 @@
+.costumer {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .with-icon {
+    padding: 0.5rem;
+    background-color: rgb(200, 215, 235);
+    font-size: 0.7rem;
+    text-align: center;
+    color: steelblue;
+  }
+
+  .with-icon i {
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    flex: 1;
+    display: grid;
+    place-content: center;
+    background-color: rgb(227, 234, 241);
+  }
+}

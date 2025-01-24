@@ -1,0 +1,100 @@
+.bill {
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  height: fit-content;
+
+  .type {
+    padding: 0.5rem;
+    display: grid;
+    place-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+    select {
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: inherit;
+      border: 0;
+      padding: 0.5rem;
+    }
+
+    select:focus {
+      outline: none;
+    }
+  }
+
+  .total,
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+  }
+
+  .clear {
+    font-weight: 600;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+  }
+
+  .flex-btn {
+    display: flex;
+
+    button {
+      flex: 1;
+      border-radius: 0;
+      background-color: white;
+      color: steelblue;
+    }
+  }
+
+  .charge {
+    padding: 1rem;
+    border-radius: 0;
+    width: 100%;
+    font-size: 1.5rem;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+
+.dialog-charge {
+  p {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .input-group {
+    position: relative;
+    margin-top: 5px;
+
+    i {
+      position: absolute;
+      top: 0.8rem;
+      left: 5px;
+      font-size: 2rem;
+      opacity: 0.75;
+    }
+
+    input {
+      font-family: inherit;
+      font-size: 1.2rem;
+      padding: 1rem 1rem 1rem 2.5rem;
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+  }
+}

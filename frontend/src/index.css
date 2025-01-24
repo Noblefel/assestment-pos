@@ -1,0 +1,38 @@
+:root {
+  font-family: Inter;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 1rem 0.5rem;
+  max-height: 90dvh;
+  width: 1100px;
+  margin: auto;
+  background-color: rgb(235, 237, 240);
+}
+
+button {
+  background-color: steelblue;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 0;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+button:has(i) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
